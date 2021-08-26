@@ -18,12 +18,14 @@ Usage
 Initialize a WebInspector instance for an URL, like this:
 
 page = WebInspector.new('http://davidesantangelo.com')
-Accessing response status and headers
+
+# Accessing response status and headers
 You can check the status and headers from the response like this:
 
 page.response.status  # 200
 page.response.headers # { "server"=>"apache", "content-type"=>"text/html; charset=utf-8", "cache-control"=>"must-revalidate, private, max-age=0", ... }
-Accessing inpsected data
+
+# Accessing inpsected data
 You can see the data like this:
 
 page.url                 # URL of the page
@@ -35,17 +37,7 @@ page.description         # description of the page
 page.links               # every link found
 page.images              # every image found
 page.meta                # metatags of the page
-Accessing meta tags
-page.meta                 # metatags of the page
-page.meta['description']  # meta description
-page.meta['keywords']     # meta keywords
-Find words (as array)
-page.find(["word1, word2"]) # return {"word1"=>3, "word2"=>1}
-Contributors
-Steven Shelby (@stevenshelby)
-Sam Nissen (@samnissen)
-License
-The webinspector GEM is released under the MIT License.
+
 
 # Contributing
 Fork it ( https://github.com/[my-github-username]/webinspector/fork )
